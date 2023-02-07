@@ -1,0 +1,105 @@
+:root {
+    --color-black: #010101;
+    --color-white: #fdfdfd;
+    --color-red: #E50914;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--color-black);
+
+}
+
+
+/* ------------------- HEADER ----------------------------------*/
+header {
+    padding: 50px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img{
+    width: 150px;
+}
+
+.botoes {
+    display: flex;
+    gap: 30px;
+    position: relative;
+}
+
+.botoes select {
+    background-color: transparent;
+    color: var(--color-white);
+    border: 1px solid var(--color-white);
+    border-radius: 2px;
+    padding: 8px 22px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.botoes select option {
+    background-color: #777;
+    color: var(--color-white);
+}
+
+.bx {
+    color: var(--color-white);
+}
+
+.bx-globe {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5px;
+    font-size: .8rem
+}
+
+.bxs-down-arrow {
+    position: absolute;
+    right: 110px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: .7rem;
+}
+
+.btn-entrar-header {
+    background-color: var(--color-red);
+    color: var(--color-white);
+    padding: 5px 15px;
+    font-size: 1rem;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.section-principal {
+    background: linear-gradient(to bottom, rgba(0,0,0,.8) 10%, rgba(0,0,0,.1), rgba(0,0,0,.8) 90%), url('../img/background-header.jpg');
+    height: 100vh;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen {
+    
+}
