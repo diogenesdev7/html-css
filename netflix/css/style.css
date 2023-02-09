@@ -26,11 +26,15 @@ body {
 
 
 /* ------------------- HEADER ----------------------------------*/
-header {
-    padding: 50px 10vw;
+.header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    padding: 30px;
+}
+
+.center {
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .logo img{
@@ -46,9 +50,9 @@ header {
 .botoes select {
     background-color: transparent;
     color: var(--color-white);
-    border: 1px solid var(--color-white);
-    border-radius: 2px;
-    padding: 8px 22px;
+    border: 1px solid rgb(255,255,255,.3);
+    border-radius: 5px;
+    padding: 5px 22px;
     -webkit-appearance: none;
     -moz-appearance: none;
     z-index: 10;
@@ -97,135 +101,10 @@ header {
     background: linear-gradient(to bottom, rgba(0,0,0,.8) 10%, rgba(0,0,0,.1), rgba(0,0,0,.8) 90%), url('../img/background-header.jpg');
     height: 100vh;
     border-bottom: 7px solid #333;
+    padding-top: 15px;
 } 
 
 
-/* ------------------------Hero banner -----------------*/
-.hero {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 25px;
-    color: var(--color-white);
-    padding-top: 150px;
-    width: 100%;
-}
-
-.hero-form {
-    width: 590px;
-    height: 56px;
-    display: flex;
-    margin-top: -7px;
-}
-
-.hero h1 {
-    font-size: 2.5rem;
-    font-weight: 900;
-}
-
-.hero p {
-    font-size: 1.5rem;
-}
-
-.hero h3 {
-    font-size: 1.4rem;
-    font-weight: 400;
-}
-
-#email {
-    padding: 15px;
-    width: 60%;
-    border-top-left-radius: 3px;
-}
-
-.btn-vamosla-hero {
-    background-color: var(--color-red);
-    color: var(--color-white);
-    height: 100%;
-    width: 31%;
-    font-size: 1.5rem;
-    border-top-right-radius: 3px;
-    transition: .3s;
-    cursor: pointer;
-}
-
-.btn-vamosla-hero:hover {
-    background-color: var(--color-red-dark);
-}
-
-
-
-
-
-
-
-
-@media screen and (max-width: 760px) {
-    .logo img {
-        width: 100px;
-    }
-
-    .btn-entrar-header {
-        font-size: .9rem;
-    }
-
-    header {
-        padding: 30px 40px;
-    }
-
-    .botoes {
-        gap: 7px;
-    }
-
-    .bxs-down-arrow {
-        right: 82px;
-        z-index: 0;
-    }
-
-    .botoes select {
-        font-size: .6rem;
-        border-color: #ccc;
-    }
-
-    .hero-form {
-        width: 620px;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 15px;
-        height: 112px;
-    }
-
-    .hero {
-        padding: 40px;
-        text-align: center;
-    }
-
-    .hero h1 {
-        font-size: 1.7rem;
-    }
-
-    .hero p {
-        font-size: 1.1rem;
-    }
-
-    .hero h3 {
-        font-size: 1.2rem;
-        
-    }
-
-    #email {
-        border-radius: 5px;
-    }
-
-    .btn-vamosla-hero {
-        width: 145px;
-        height: 56px;
-        border-radius: 5px;
-    }
-
-    .section-principal {
-        height: 110vw;
-    }
+@media (max-width: 1200px) {
+    
 }
