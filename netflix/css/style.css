@@ -45,6 +45,7 @@ body {
     display: flex;
     gap: 30px;
     position: relative;
+    align-items: center;
 }
 
 .botoes select {
@@ -52,7 +53,9 @@ body {
     color: var(--color-white);
     border: 1px solid rgb(255,255,255,.3);
     border-radius: 5px;
-    padding: 5px 22px;
+    width: 130px;
+    height: 35px;
+    text-align: center;
     -webkit-appearance: none;
     -moz-appearance: none;
     z-index: 10;
@@ -71,13 +74,14 @@ body {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    left: 5px;
-    font-size: .8rem
+    left: 11px;
+    font-size: .9rem
+    
 }
 
 .bxs-down-arrow {
     position: absolute;
-    right: 110px;
+    right: 120px;
     top: 50%;
     transform: translateY(-50%);
     font-size: .7rem;
@@ -86,9 +90,11 @@ body {
 .btn-entrar-header {
     background-color: var(--color-red);
     color: var(--color-white);
-    padding: 5px 15px;
+    text-align: center;
+    width: 80px;
+    height: 35px;
     font-size: 1rem;
-    border-radius: 3px;
+    border-radius: 5px;
     cursor: pointer;
     transition: .5s;
 }
@@ -105,6 +111,124 @@ body {
 } 
 
 
-@media (max-width: 1200px) {
-    
+@media (max-width: 750px) {
+    .logo img {
+        width: 100px;
+    }
+
+    .botoes {
+        gap: 15px;
+    }
+
+    .botoes select {
+        font-size: 0.1px;
+        width: 70px;
+    }
+}
+
+@media (max-width: 415px) {
+    .header {
+        padding: 30px 10px;
+    }
+
+    .botoes select {
+        width: 50px;
+    }
+
+    .btn-entrar-header {
+        width: 70px;
+    }
+
+    .bx-globe {
+        left: 7px;
+    }
+
+    .bxs-down-arrow {
+        right: 95px;
+    }
+}
+/* ------- fim header ----------------*/
+
+/* -------------hero section ----------------*/
+
+.hero {
+    color: var(--color-white);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+    text-align: center;
+    padding: 15vw 5vw 0 5vw;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+p {
+    font-size: 1.4rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.botoes-hero {
+    display: flex;
+    margin-top: -10px;
+}
+
+#email {
+    width: 381px;
+    padding: 15px;
+    border-radius: 5px 0 0 5px;
+    height: 56px;
+}
+
+.btn-vamosla {
+    width: 172px;
+    background-color: var(--color-red);
+    color: var(--color-white);
+    border-radius: 0 5px 5px 0;
+    height: 56px;
+    font-size: 1.3rem;
+}
+
+@media (max-width: 960px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.3rem;
+    }
+
+    h3 {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 710px) {
+    #email {
+        width: 54vw;
+    }
+}
+
+@media (max-width: 590px) {
+    .botoes-hero {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    #email {
+        width: 80vw;
+        border-radius: 5px;
+    }
+
+    .btn-vamosla {
+        border-radius: 5px;
+        width: 150px;
+    }
 }
