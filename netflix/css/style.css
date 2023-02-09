@@ -108,6 +108,7 @@ body {
     height: 100vh;
     border-bottom: 7px solid #333;
     padding-top: 15px;
+    border-bottom: 5px solid #333;
 } 
 
 
@@ -147,9 +148,9 @@ body {
         right: 95px;
     }
 }
-/* ------- fim header ----------------*/
+/* ---------------- fim header --------------------------*/
 
-/* -------------hero section ----------------*/
+/* ------------------hero section -----------------------*/
 
 .hero {
     color: var(--color-white);
@@ -162,11 +163,15 @@ body {
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 2.6rem;
 }
 
 p {
     font-size: 1.4rem;
+}
+
+h2 {
+    font-size: 2.5rem;
 }
 
 h3 {
@@ -232,3 +237,57 @@ h3 {
         width: 150px;
     }
 }
+/* ------------fim hero section -----*/
+
+/* =======---------= section 2 ==============-------=*/
+
+.section2 {
+    color: var(--color-white);
+    display: flex;
+    align-items: center;
+    padding: 5vw 3vw;
+    border-bottom: 5px solid #333;
+}
+
+.texto {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.imagem {
+    width: 50%;
+    position: relative;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.imagem img {
+    width: 100%;
+}
+
+.videotv {
+    position: absolute;
+    left: 83px;
+    top: 98px;
+}
+
+@media (max-width: 960px) {
+    .section2 {
+        flex-direction: column;
+        text-align: center;
+        
+    }
+
+    .texto {
+        width: 80vw;
+        margin-bottom: 3vw;
+    }
+
+    .imagem {
+        width: 70vw;
+        margin-bottom: 3vw;
+    }
+}
+
