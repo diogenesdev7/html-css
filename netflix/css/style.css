@@ -151,6 +151,7 @@ body {
 }
 /* ---------------- fim header --------------------------*/
 
+
 /* ------------------hero section -----------------------*/
 
 .hero {
@@ -181,12 +182,15 @@ h3 {
 }
 
 
-.botoes-hero {
+.form-vamosla {
     display: flex;
+}
+
+.hero .form-vamosla {
     margin-top: -10px;
 }
 
-#email {
+.email {
     width: 381px;
     padding: 15px;
     border-radius: 5px 0 0 5px;
@@ -245,6 +249,7 @@ h3 {
 }
 /* ------------fim hero section -----*/
 
+
 /* =======---------= section 2 ==============-------=*/
 
 .section2 {
@@ -298,6 +303,7 @@ h3 {
 }
 /* ---------- fim section2 ---------- */
 
+
 /* --------------- section 3 --------------*/
 
 .section3 {
@@ -337,6 +343,7 @@ h3 {
 
 /* ----------fim section 3 ---------*/
 
+
 /* ----------------- section 4 -------------*/
 
 .section4 {
@@ -344,6 +351,7 @@ h3 {
     justify-content: space-around;
     align-items: center;
     padding: 8vw 5vw;
+    border-bottom: 5px solid #333;
 }
 
 .section4 .texto {
@@ -373,5 +381,68 @@ h3 {
 
 /* -------- fim section 4 ----------- */
 
+
 /* ------------------- section 5 --------------- */
 
+.section5 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5vw;
+    border-bottom: 5px solid #333;
+}
+
+.section5 img {
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+
+@media (max-width: 960px) {
+    .section5 {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+
+    .section5 img {
+        width: 80%;
+    }
+}
+
+/* ---------- fim section 5 ---------- */
+
+
+/* ---------------- section FAQ ------------ */
+
+.faq {
+    padding: 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.perguntas {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.faq-question {
+    background-color: #333;
+    color: var(--color-white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 74px;
+    width: 814px;
+    padding: 30px;
+    cursor: pointer;
+}
+
+.bx-plus {
+    font-size: 2rem;
+}
