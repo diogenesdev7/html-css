@@ -453,4 +453,17 @@ h3 {
     padding: 30px;
     width: 814px;
     margin-top: -8px;
+    display: none;
+}
+
+.faq-answer-show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
 }
