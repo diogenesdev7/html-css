@@ -195,6 +195,8 @@ h3 {
     padding: 15px;
     border-radius: 5px 0 0 5px;
     height: 56px;
+    color: var(--color-black);
+    font-size: 1.1rem
 }
 
 .btn-vamosla {
@@ -204,6 +206,7 @@ h3 {
     border-radius: 0 5px 5px 0;
     height: 56px;
     font-size: 1.3rem;
+    cursor: pointer;
 }
 
 @media (max-width: 960px) {
@@ -221,8 +224,18 @@ h3 {
 }
 
 @media (max-width: 710px) {
-    #email {
-        width: 54vw;
+    .email {
+        width: 80vw;
+    }
+
+    .btn-vamosla {
+        width: 50vw;
+    }
+
+    .form-vamosla {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
     }
 }
 
@@ -422,6 +435,7 @@ h3 {
     justify-content: center;
     align-items: center;
     gap: 50px;
+    border-bottom: 5px solid #333;
 }
 
 .perguntas {
@@ -468,6 +482,10 @@ h3 {
     display: block;
 }
 
+.faq h3 {
+    text-align: center;
+}
+
 
 @media (max-width: 960px) {
     .faq-question {
@@ -485,7 +503,6 @@ h3 {
     }
 
     .email {
-        width: 50vw;
         padding: 15px;
         border-radius: 5px 0 0 5px;
         height: 56px;
@@ -498,5 +515,84 @@ h3 {
         border-radius: 0 5px 5px 0;
         height: 56px;
         font-size: 1.3rem;
+    }
+}
+
+/* ------------- fim section faq ------------- */
+
+/* ---------------- footer ------------------- */
+
+footer {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+
+footer p {
+    font-size: 1rem;
+    color: #777;
+}
+
+footer nav ul {
+    height: 170px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer nav ul div {
+    display: flex;
+    flex-direction: column-reverse
+}
+
+footer nav ul li {
+    width: 25%;
+}
+
+footer nav ul li a {
+    color: #777;
+    font-size: .9rem;
+}
+
+footer .botoes .bxs-down-arrow {
+    left: 108px;
+}
+
+footer .botoes .bx, footer .botoes select{
+    color: #aaa
+}
+
+footer span {
+    font-size: .9rem;
+    color: #777;
+}
+
+
+@media (max-width: 960px) {
+    footer nav ul li {
+        width: 33.333%;
+    }
+}
+
+@media (max-width: 750px) {
+    footer .botoes .bxs-down-arrow {
+        left: 50px;
+    }
+
+    footer nav ul li {
+        width: 50%;
+    }
+
+    footer nav ul {
+        height: 300px;
+    }
+}
+
+@media (max-width: 416px) {
+    footer .botoes .bxs-down-arrow {
+        left: 30px;
     }
 }
