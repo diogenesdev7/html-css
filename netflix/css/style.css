@@ -438,7 +438,7 @@ h3 {
     justify-content: space-between;
     align-items: center;
     height: 74px;
-    width: 814px;
+    width: 60vw;
     padding: 30px;
     cursor: pointer;
 }
@@ -460,10 +460,43 @@ h3 {
     display: block;
 }
 
-.hide {
+.sectionHide .faq-answer{
     display: none;
 }
 
-.show {
+.sectionShow .faq-answer{
     display: block;
+}
+
+
+@media (max-width: 960px) {
+    .faq-question {
+        width: 75vw;
+    }
+}
+
+@media (max-width: 720px) {
+    .faq-question {
+        width: 98vw;
+    }
+
+    .perguntas p {
+        font-size: max(.8rem, 1rem);
+    }
+
+    .email {
+        width: 50vw;
+        padding: 15px;
+        border-radius: 5px 0 0 5px;
+        height: 56px;
+    }
+    
+    .btn-vamosla {
+        width: 28vw;
+        background-color: var(--color-red);
+        color: var(--color-white);
+        border-radius: 0 5px 5px 0;
+        height: 56px;
+        font-size: 1.3rem;
+    }
 }

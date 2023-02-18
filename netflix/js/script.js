@@ -1,12 +1,14 @@
 function clickAccordion(t) {
-    const pergunta = document.getElementsByClassName('pergunta')[t]
-    const resposta = pergunta.lastElementChild
+    let pai = document.getElementsByClassName('faq-question')[t].parentElement
+    let conteudo = pai.classList.contains('sectionHide')
+    let sessoes = document.getElementsByClassName('pergunta')
 
-    if (resposta.classList.contains('hide')) {
-        resposta.classList.remove('hide')
-        resposta.classList.add('show')
+    if (conteudo == true) {
+        for (let s = 0; s<sessoes.length; s++) {
+            sessoes[s].className = 'pergunta sectionHide'
+        }
+        pai.className = 'pergunta sectionShow'
     } else {
-        resposta.classList.remove('show')
-        resposta.classList.add('hide')
+        pai.className = 'pergunta sectionHide'
     }
 }
