@@ -529,7 +529,7 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 30px;
-
+    background-color: rgba(0,0,0,.8);
 }
 
 footer p {
@@ -594,5 +594,72 @@ footer span {
 @media (max-width: 416px) {
     footer .botoes .bxs-down-arrow {
         left: 30px;
+    }
+}
+
+
+
+
+
+/*----------------------------- PÁGINA LOGIN ---------------------*/
+
+.section-principal-login {
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,.4), rgba(0, 0, 0, 0.3)), url(../img/background-header.jpg)
+}
+
+/* ----------- section-principal-login --------- */
+
+
+.login-content {
+    background-color: rgba(0,0,0,.5);
+    margin: 0 auto;
+    width: 500px;
+    padding: 50px;
+}
+
+.login-content h2 {
+    font-size: 2rem;
+}
+
+.login-form {
+    
+}
+
+
+/* ---------------------- footer login ----------------*/
+
+.footer-login {
+    position: absolute;
+    bottom: 0;
+    max-width: 100vw !important;
+    margin: 0;
+    width: 100%;
+    padding: 50px 13vw;
+}
+
+.footer-login ul {
+    height: 50px;
+    width: 100%;
+}
+
+.footer-login ul li {
+    width: 25%;
+}
+
+@media (max-width: 960px) {
+    .footer-login ul li {
+        width: 33.3333%;
+        line-height: 1.5rem;
+    }
+
+    .footer ul {
+        height: 200px;
+    }
+}
+
+@media (max-width: 720px) {
+    .footer-login ul li{
+        width: 50%;
     }
 }
