@@ -18,21 +18,34 @@
 
 
         <div class="login-content">
-            <h2>Entrar</h2>
+            <div class="login-content-center">
+                <h2>Entrar</h2>
                 
-            <form class="login-form">
-                <input type="email" id="#login-email" placeholder="Email ou número de telefone">
-                <input type="password" id="login-senha" placeholder="Senha">
-                <button class="login-btn-entrar">Entrar</button>
+                <form class="login-form">
+                    <div>
+                        <input type="text" autocomplete="off" name="acesso" id="login-email" required>
+                        <span>Email ou número de telefone</span>
+                    </div>
+                    <div>
+                        <input type="password" name="acesso" id="login-senha" required>
+                        <span>Senha</span>
+                    </div>
+                    <button id="login-botao">Entrar</button>
+                </form>
+
                 <div class="ajuda">
-                    <input type="checkbox" id="lembre-se">
-                    <label for="lembre-se">Lembre-se de mim</label>
+                    <div class="lembre-se">
+                        <input type="checkbox" id="chklembre-se">
+                        <label for="chklembre-se">Lembre-se de mim</label>
+                    </div>
                     <a href="#">Precisa de ajuda?</a>
                 </div>
-            </form>
 
-            <h3>Novo por aqui? <a href="#">Assine agora.</a></p>
-            <p>Esta página é protegida pelo Google reCAPTCHA<br>para garantir que você não é um robô. <a href="#">Saiba mais.</a></p>
+                <div class="assine">
+                    <h3>Novo por aqui? <a href="#">Assine agora.</a></p>
+                    <p>Esta página é protegida pelo Google reCAPTCHA<br>para garantir que você não é um robô. <a href="#">Saiba mais.</a></p>
+                </div>
+            </div>
         </div>
 
 
