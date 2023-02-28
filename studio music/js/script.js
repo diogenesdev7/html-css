@@ -28,3 +28,8 @@ function nextImage() {
     }
     document.getElementById('radio'+count).checked = true
 }
+
+
+
+
+

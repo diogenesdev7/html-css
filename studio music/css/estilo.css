@@ -25,7 +25,6 @@ body {
 }
 
 .cabecalho {
-    
 }
 
 .cabecalho .logo {
@@ -67,7 +66,7 @@ body {
     top: 80px;
     flex-direction: column;
     height: 100%;
-    background-color: var(--red);
+    background-color: #26706b;
     display: none;
 }
 
@@ -77,7 +76,7 @@ body {
 }
 
 .menu-cabecalho ul ul ul li a{
-    background-color: var(--red)
+    background-color: #2a6b67
 }
 
 .menu-cabecalho ul ul li {
@@ -107,6 +106,7 @@ body {
     line-height: 80px;
     width: 100%;
     padding: 3px;
+    border-bottom: 1px solid rgba(0,0,0,.2)
 }
 
 .menu-cabecalho ul li a:hover {
@@ -188,6 +188,7 @@ body {
     height: 420px;
     overflow: hidden;
     position: relative;
+    z-index: -1;
 }
 
 .hero input {
@@ -286,6 +287,7 @@ section.ofertas {
 .ofertas h1 {
     text-align: center;
     font-size: max(1.7rem, 3.5vw);
+    margin-bottom: 35px;
 }
 
 .ofertas-cards {
@@ -348,5 +350,56 @@ section.ofertas {
     text-align: center;
 }
 
+/* --------------------- fim ofertas ---------------- */
 
+/* ---------------------- Informações --------------------*/
 
+.informacoes {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+    height: 200px
+}
+
+.fique-informado {
+    background-color: #333;
+    width: 40%;
+    text-align: center;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+
+.fique-informado h1 {
+    font-size: 1.3rem;
+}
+
+.fique-informado p {
+}
+
+.fique-informado input {
+    min-width: 50%;
+    color: var(--black);
+    outline: none;
+    height: 40px;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.fique-informado button {
+    background-color: var(--red);
+    height: 40px;
+    width: 100px;
+    border-radius: 30px;
+}
+
+.redes-sociais {
+    padding: 15px;
+    background-color: #333;
+    width: 40%;
+    text-align: center;
+}

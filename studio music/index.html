@@ -11,7 +11,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body onload="trocarImagem()">
     
     <header class="cabecalho">
         <div class="logo">
@@ -90,10 +90,6 @@
     <section class="ofertas">
         <h1>Algumas ofertas</h1>
 
-        <div class="ofertas-cards">
-            <i class='bx bx-chevron-left'></i>
-            <i class='bx bx-chevron-right'></i>
-
             <div class="card-slider">
                 <div class="card">
                     <div class="card-imagem"></div>
@@ -104,18 +100,53 @@
                 </div>
 
                 <div class="card">
-                
+                    <div class="card-imagem"></div>
+                    <div class="card-info">
+                        <h2>Guitarra Gibson</h2>
+                        <p>R$ 7.000,00</p>
+                    </div>
                 </div>
 
                 <div class="card">
-                
+                    <div class="card-imagem"></div>
+                    <div class="card-info">
+                        <h2>Guitarra Gibson</h2>
+                        <p>R$ 7.000,00</p>
+                    </div>
                 </div>
 
                 <div class="card">
-                
+                    <div class="card-imagem"></div>
+                    <div class="card-info">
+                        <h2>Guitarra Gibson</h2>
+                        <p>R$ 7.000,00</p>
+                    </div>
                 </div>
             </div>
         </div>
+    </section>
+
+
+    <section class="informacoes">
+        <section class="fique-informado">
+            <h1>Fique informado</h1>
+            <p>Inscreva-se e receba informações exclusivas</p>
+            <div>
+                <input type="email" id="email" placeholder="E-mail">
+                <button id="btn-inscreva-se">Inscreva-se</button>
+            </div>
+        </section>
+
+        <nav class="redes-sociais">
+            <h1>Redes Sociais</h1>
+            <p>Junte-se a nós para<br>novidades, ofertas e promoções!</p>
+            <ul>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+            </ul>
+        </nav>
     </section>
 
 
