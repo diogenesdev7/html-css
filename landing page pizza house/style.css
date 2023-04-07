@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    height: 100vh;
+    /* background-image: url('../images/pizzabg2.jpg'); */
+    background-color: #181615;
+}
+
+header {
+    height: 100px;
+    box-shadow: 1px 0 5px rgba(255, 99, 71, 0.699);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    color: #fafafa;
+    font-size: 1.7rem;
+    text-shadow: 0 0 5px rgba(231, 214, 119, 0.5);
+    font-weight: 600;
+}
+
+nav {
+    margin-left: 20vw;
+    transition: .5s;
+}
+
+nav ul {
+    display: flex;
+    gap: 25px;
+}
+
+nav ul li a {
+    color: #fafafa;
+    font-size: max(1rem, 1.7vw);
+    text-decoration: none;
+    transition: ease .5s;
+}
+
+nav ul li a:hover {
+    color:rgb(228, 80, 54);
+}
+
+
+main {
+    color: #fafafa;
+    padding: 100px 150px;
+    display: flex;
+    position: relative;
+}
+
+
+
+.image img {
+    width: 30vw;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+
+h2 {
+    font-size: 1.3rem;
+    margin-bottom: 25px;
+    color: tomato;
+}
+
+h1 {
+    font-size: 2.3rem;
+    margin-bottom: 25px;
+}
+
+p {
+    line-height: 1.7rem;
+    letter-spacing: 1px;
+    width: 35vw;
+    margin-bottom: 85px;
+}
+
+button {
+    padding: 15px 35px;
+    border-radius: 7px;
+    background-color: tomato;
+    font-weight: 600;
+    font-size: 1.3rem;
+    border: none;
+    transition: .5s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(228, 80, 54);
+}
+
+.bx {
+    color: #dddcdc;
+    font-weight: 700;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.bx-menu {
+    font-size: 2.3rem;
+}
+
+.bx-x {
+    font-size: 2.5rem;
+    margin-right: 10px;
+}
+
+
+
+
+@media screen and (max-width: 970px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        width: 100%;
+        text-align: center;
+        padding: 60px;
+        gap: 30px;
+    }
+
+    p {
+        width: auto;
+    }
+
+    nav {
+        margin-left: 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        position: absolute;
+        top: 101px;
+        left: -1000px;
+        background-color: #333;
+        height: 100vh;
+        width: 100vw;
+        align-items: center;
+        gap: 50px;
+        z-index: 2;
+        padding: 100px;
+        transition: .5s;
+    }
+
+    nav ul li a {
+        font-size: 2rem;
+    }
+
+
+
+    .image img {
+        position: relative;
+        width: 70%;
+    }
+
+    .user {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
