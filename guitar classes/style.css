@@ -1,0 +1,377 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: 0;
+  font-family: "Sora", sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+header {
+  width: 100%;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+i {
+  color: #fcfcfc;
+}
+
+.header-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.header-icons a:hover i {
+  color: #d34040;
+  animation: translateY 0.5s infinite alternate;
+}
+
+@keyframes translateY {
+  from {
+    transform: translateY(0) scale(1);
+  }
+  to {
+    transform: translateY(-8px) scale(1.1);
+  }
+}
+.header-button {
+  border: 1px solid #fcfcfc;
+  padding: 8px 24px;
+  border-radius: 5px;
+  color: #fcfcfc;
+  background: transparent;
+  transition: 0.3s;
+}
+
+.header-button:hover {
+  border-color: #d34040;
+  background-color: #d34040;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.header-logo img {
+  width: 250px
+}
+
+@media screen and (max-width: 768px) {
+  .header-content {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .header-content i {
+    margin-top: 15px;
+    font-size: 25px;
+  }
+  .header-logo {
+    width: 160px;
+    margin-top: 45px;
+  }
+  .header-button {
+    display: none;
+  }
+}
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0.8vw;
+}
+
+.bg-home {
+  position: relative;
+}
+
+.bg-home:before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #06121e), url("../assets/bg-guitar.jpg");
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-position: 50% 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.9;
+}
+
+.hero {
+  color: #fcfcfc;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+}
+.hero h1 {
+  text-align: center;
+  line-height: 150%;
+  max-width: 950px;
+  font-size: max(1.5rem, 3.5vw);
+}
+.hero p {
+  text-align: center;
+  margin: 15px 0;
+}
+
+.button-contact {
+  padding: 15px 28px;
+  color: #fcfcfc;
+  background-color: #b42b2b;
+  border: none;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 14px 0;
+  border-radius: 5px;
+}
+
+.button-contact:hover {
+  animation: scalebutton 0.8s alternate infinite;
+}
+
+@keyframes scalebutton {
+  from {
+    transform: scale(1);
+    background-color: #b42b2b;
+  }
+  to {
+    transform: scale(1.1);
+    background-color: #06090c;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero {
+    min-height: 60vh;
+  }
+  h1 {
+    width: 100%;
+    padding: 0 15px;
+  }
+  p {
+    font-size: 0.9rem;
+    opacity: 0.9;
+  }
+}
+.about {
+  background-color: #06121e;
+  color: #fcfcfc;
+  overflow: hidden;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 64px 14px 34px 14px;
+}
+.about-content div {
+  flex: 1;
+}
+.about-content img {
+  max-width: 570px;
+}
+
+.about-description h2 {
+  font-size: 38px;
+  margin-bottom: 25px;
+}
+
+.about-description p:last-child {
+  margin-top: 35px;
+  opacity: 0.95;
+}
+
+@media screen and (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+    margin-top: -25px;
+  }
+  .about-content img {
+    max-width: 370px;
+  }
+}
+.services {
+  background-color: #fcfcfc;
+  color: #232224;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 55px 15px;
+}
+
+.services-content {
+  text-align: center;
+}
+.services-content h2 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+.services-content p {
+  line-height: 150%;
+  margin-bottom: 15px;
+  max-width: 670px;
+}
+
+.classes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  padding: 0 45px 35px 45px;
+}
+
+.class {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #fcfcfc;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+.class img {
+  width: 100%;
+  max-width: 354px;
+  transition: 0.3s;
+}
+.class img:hover {
+  transform: scale(1.2);
+}
+
+.class-info {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px;
+  background-color: #fcfcfc;
+  z-index: 2;
+}
+.class-info button {
+  color: #fcfcfc;
+  background-color: #d94140;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: default;
+}
+
+@media screen and (max-width: 768px) {
+  .classes {
+    flex-direction: column;
+  }
+  .class {
+    max-width: 300px;
+  }
+}
+.mapa {
+  background-color: #fcfcfc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  justify-content: center;
+  color: #fcfcfc;
+  padding: 25px 0;
+}
+.footer div {
+  display: flex;
+  gap: 15px;
+}
+.footer i {
+  font-size: 1.7rem;
+  transition: 0.3s;
+}
+.footer i:hover {
+  color: #d94140;
+}
+.footer p {
+  opacity: 0.9;
+}
+
+
+
+.footer img {
+  width: 250px
+}
+
+.btn-whatsapp {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+}
+.btn-whatsapp img {
+  width: max(50px, 5vw);
+  transition: 0.25s;
+  opacity: 0.8;
+}
+.btn-whatsapp img:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+.tooltip-text {
+  visibility: hidden;
+  position: absolute;
+  right: 80px;
+  z-index: 3;
+  width: max(100px, 5vw);
+  font-size: max(0.8rem, 1.1vw);
+  text-align: center;
+  color: #fcfcfc;
+  background-color: #232224;
+  opacity: 0;
+  transition: 0.3s;
+  padding: 5px;
+}
+
+.btn-whatsapp:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background-color: #06121e;
+}
+
+button, a {
+  cursor: pointer;
+}
+
+svg, img {
+  width: 100%;
+}/*# sourceMappingURL=style.css.map */

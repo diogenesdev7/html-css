@@ -1,0 +1,28 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 0;
+    font-family: 'Sora', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+@import 'partials/colors';
+@import 'partials/header';
+@import 'partials/layout';
+
+body {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-color: $primary-normal;
+}
+
+button, a {
+    cursor: pointer;
+}
+
+svg, img {
+    width: 100%;
+}
